@@ -6,23 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character and Word Counter</title>
-    <link rel="stylesheet" href="charCount.css">
+    <!-- <link rel="stylesheet" href="charCount.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="main">
-        <h1 class="heading">Character & Word Counter</h1>
-        <div class="counter">
-            <div class="output">
-                <p class="character">Character : <span class="char-count">0</span></p>
+<body class="w-11/12 lg:w-4/5 mx-auto mt-5 lg:mt-20">
+    <div class="bg-sky-900 rounded-md p-8">
+        <h1 class="text-2xl lg:text-5xl text-center font-bold pb-8 text-amber-400">Character & Word Counter</h1>
+        <div class="flex justify-between mb-5 gap-2">
+            <div
+                class="flex justify-around items-center bg-white py-7 rounded-md w-3/5 lg:w-1/2 text-lg lg:text-xl text-center">
+                <p class="">Character : <span class="char-count">0</span></p>
                 <p class="word">Word : <span class="word-count">0</span></p>
             </div>
-            <!-- <div> -->
-            <button class="btn">clear</button>
-            <!-- </div> -->
+            <button class="py-5 lg:py-7 px-8 lg:px-10 bg-white rounded-md text-xl btn">clear</button>
         </div>
-        <div class="area">
-            <textarea name="" id="input-area" c placeholder="Writing here"></textarea>
+        <div class="">
+            <textarea class="w-full h-80 resize-none rounded-md p-5" name="" id="input-area"
+                placeholder="Writing here"></textarea>
         </div>
     </div>
 

@@ -28,7 +28,7 @@ function wordCount(words) {
 }
 
 clear.addEventListener("click", function () {
-    input.value = " ";
+    input.value = "";
     character.innerHTML = 0;
     word.innerHTML = 0;
 })
