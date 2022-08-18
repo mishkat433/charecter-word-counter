@@ -6,7 +6,6 @@ let clear = document.querySelector(".btn");
 input.addEventListener("input", function (event) {
     characterCount(input.value)
     wordCount(input.value)
-    // countWords(input.value)
 })
 
 function characterCount(charecter) {
