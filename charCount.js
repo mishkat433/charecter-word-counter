@@ -6,11 +6,12 @@ let clear = document.querySelector(".btn");
 input.addEventListener("input", function (event) {
     characterCount(input.value)
     wordCount(input.value)
+    // countWords(input.value)
 })
 
 function characterCount(charecter) {
     let getInput = charecter;
-    getInput = getInput.trim(' ');
+    getInput = getInput.split(' ').join('');
     let getCharacter = getInput.length;
     character.innerText = getCharacter;
 }
@@ -18,13 +19,8 @@ function characterCount(charecter) {
 function wordCount(words) {
     let getInput = words;
     getInput = getInput.trim(' ');
-    let getWord = getInput.split(" ");
-    if (getWord[0] == 0) {
-        word.innerText = 0;
-    }
-    else {
-        word.innerHTML = getWord.length;
-    }
+    let getWord = getInput.split(" ").filter(words => words !== '').length;
+    word.innerHTML = getWord;
 }
 
 clear.addEventListener("click", function () {
